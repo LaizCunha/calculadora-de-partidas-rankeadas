@@ -7,6 +7,9 @@ body, html {
     background-repeat: no-repeat; /* Evita repetição da imagem */
     /* Outras propriedades de estilo da sua div */
     background-attachment: fixed; /* Fixa a imagem de fundo */
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 15px;
+    line-height: 2;    
 }
 
 .container {
@@ -17,12 +20,14 @@ body, html {
 
 .div-completa {
     text-align: center;
-    height: 100px;        
+    height: 100px;   
+    color: white;    
 }
 
 .div-center {
     display: flex;
-    flex: 2; /* 2 vezes a altura das divs laterais */    
+    flex: 2; /* 2 vezes a altura das divs laterais */ 
+    color: white;   
 }
 
 .half-left {
@@ -34,9 +39,70 @@ body, html {
     flex: 2;
     text-align: center;
     flex-direction: column;
+    border-top: 4px dotted #f06b5a;
 }
 
 .half-right {
     flex: 1;
     text-align: center;
+}
+
+.button {
+    justify-content: center;
+    margin: 20PX;
+    padding: 10px 20px;
+    background-color: #6abce9;    ;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#form-main {
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #ccc; /* Adiciona uma borda */
+    border-radius: 5px; /* Borda arredondada */
+    padding: 5px; /* Espaçamento interno */
+}
+
+#resultado {
+    display: none;
+    color:#1a1a3d;
+    background-color: #f6dbb9;
+    border-radius: 10px;
+    padding: 5px;    
+    margin: auto;
+    font-size: 10pt;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) { 
+
+    body {
+        background-image: url(/img/back-img.png);
+        font-size: 8pt;
+    }   
+
+    #resultado {
+        display: none;
+        color:#1a1a3d;
+        background-color: #f6dbb9;
+        border-radius: 10px;
+        padding: 5px;    
+        margin: auto;
+        font-size: 7pt;
+        text-align: center;
+    }
+    
 }

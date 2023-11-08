@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
@@ -11,12 +12,23 @@
 <body>
     <div class="container">
         <div class="div-completa">
-            <p>TESTE</p>
+            <p>CALCULADORA<br>DE PARTIDAS RANKEADAS</p>
         </div>
         <div class="div-center">
             <div class="half-left"></div>
             <div class="half-center">
-                <p>TESTE</p>
+                <form id="form-main" onsubmit="onFormSubmit(event)">
+                    <label for="nome">Nome do Personagem:</label><br>
+                    <input type="text" id="nome" name="nome"><br>
+                    <label for="vitorias">Número de Vitórias:</label><br>
+                    <input type="number" id="vitorias" name="vitorias"><br>
+                    <label for="derrotas">Número de Derrotas:</label><br>
+                    <input type="number" id="derrotas" name="derrotas"><br>
+                    <button class="button">CALCULAR</button>
+                    <div id="resultado">
+                        <p id="mensagem">Teste</p>
+                    </div>                
+                </form>
             </div>
             <div class="half-right"></div>
         </div>
