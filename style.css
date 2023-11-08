@@ -1,0 +1,42 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;  
+    background-image: url(/img/back-img.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    /* Outras propriedades de estilo da sua div */
+    background-attachment: fixed; /* Fixa a imagem de fundo */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;    
+    height: 100%;
+}
+
+.div-completa {
+    text-align: center;
+    height: 100px;        
+}
+
+.div-center {
+    display: flex;
+    flex: 2; /* 2 vezes a altura das divs laterais */    
+}
+
+.half-left {
+    flex: 1;
+    text-align: center;
+}
+
+.half-center {
+    flex: 2;
+    text-align: center;
+    flex-direction: column;
+}
+
+.half-right {
+    flex: 1;
+    text-align: center;
+}
